@@ -1,0 +1,95 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-image: url(../images/h2.jpg);
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #dcf900;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.news {
+    background-color: white;
+    padding: 50px 0 32px;
+}
+
+article {
+    width: 800px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid black;
+}
+
+article a {
+    color: darkviolet;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: darkorange;
+}
+
+article h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    color:grey;
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer .links > a {
+    color: darkgreen;
+    padding: 0 25px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.copyright {
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    color: red;
+    font-size: 1.2rem;
+}
+
+article:nth-child(2n) {
+    background-color:bisque;
+}
+
+article#new  h2::before {
+    content: "NEW! ";
+    color:crimson;
+}
